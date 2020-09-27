@@ -90,7 +90,7 @@
 | length        | Integer                                 | Optional. The number of LEDs the build up the segment. If not specified, the length is calculated by the duration of the rhythm that triggered the action and the segment's current move properties. If the segment doesn't have move properties or the segment creation is not triggered by a rhythm, it defaults to 1 |
 | headColor     | String                                  | The color of the first LED of the segment       |
 | headIntensity | Float                                   | The light intensity of the first LED of the segment. It should be in the range [0.0, 1.0]. If not, the value will be the closest number that is in the range     |
-| priority      | Integer                                 | The priority of the segment                     |
+| priority      | Integer                                 | The priority of the segment. Reserved for futures use                     |
 | transforms    | [Transform Wrapper Object](#Transform-Wrapper-Object)[] | Describes the initial transformations of the segment applied right after the creation |
 
 ```json
@@ -397,20 +397,20 @@ segment that triggered this transformation.
                           "g": 255,
                           "b": 0
                         },
-						"headIntensity": 1.0,
-						"priority": 0,
-						"transforms": [
-							{
-								"transform": {
-									"transformType": "Dim",
-									"transformDescriptor": {
-										"dimMilliseconds": 3000,
-										"startIntensity": 1.0,
-										"endIntensity": 0.0
-									}
-								}
-							}
-						]
+            "headIntensity": 1.0,
+            "priority": 0,
+            "transforms": [
+              {
+                "transform": {
+                  "transformType": "Dim",
+                  "transformDescriptor": {
+                    "dimMilliseconds": 3000,
+                    "startIntensity": 1.0,
+                    "endIntensity": 0.0
+                  }
+                }
+              }
+            ]
                     }
                 }
             ],
