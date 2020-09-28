@@ -57,6 +57,12 @@ The LEDs will only respond if the response has a 200 OK status. If you get
 a 400 Bad Request, you will also receive some additional information about
 the nature of the problem.
 
+### Stopping the LEDs
+
+Since the timer effects are basically running indefinitely you might want to stop them at some point.
+You can do that by sending a POST request to http://backend.bassboost.hu/hackathon/stop/{key}.
+This will kill the running process, so you need to wait a maximum 30seconds until it restarts automatically.
+
 ### Music synchronization
 
 You can also synchronize the LEDs to the music you are listening on Spotify and make music reactive effects.
