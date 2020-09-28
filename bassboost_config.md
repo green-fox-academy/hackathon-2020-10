@@ -186,8 +186,8 @@
 ```json
 {
     "fadeMilliseconds": 1000,
-    "startColor": 0.0,
-    "endColor": 0.8,
+    "startColor": Color
+    "endColor": Color,
 }
 ```
 
